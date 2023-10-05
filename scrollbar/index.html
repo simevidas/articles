@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>DRAFT</title>
+    <meta name="charset" content="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../favicon.png" />
+    <script type="module" src="../md-block.js"></script>
+  </head>
+  <body>
+    <article>
+      <md-block src="article.md"></md-block>
+    </article>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-light.min.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"
+    ></script>
+    <script defer>
+      document.body.addEventListener('md-render', () => {
+        // when the content has been added to the DOM, <md-block> will have rendered="remote"
+        if (document.querySelector('[rendered="remote"]')) {
+          hljs.highlightAll();
+        }
+      });
+    </script>
+  </body>
+</html>
