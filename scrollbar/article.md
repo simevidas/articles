@@ -356,4 +356,4 @@ Container queries are supported in all desktop browsers since February 2023. If 
 
 ## Outro
 
-If you’d like to learn more about the concepts that were discussed in this article, I recommend the [Viewport investigation project](https://github.com/web-platform-tests/interop-2022-viewport), which is a collaboration between browser vendors to “research and improve the state of interoperability of existing viewport measurement features”. The new viewport units were in fact one of the focus areas of [Interop 2022](https://web.dev/interop-2022/).
+If you’d like to learn more about the concepts that were discussed in this article, I recommend the [Viewport investigation project](https://github.com/web-platform-tests/interop-2022-viewport), which was a collaboration between browser vendors to “research and improve the state of interoperability of existing viewport measurement features”. The new viewport units were in fact one of the focus areas of [Interop 2022](https://web.dev/interop-2022/).
