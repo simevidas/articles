@@ -202,7 +202,7 @@ This behavior isn’t exclusive to desktop platforms. It also occurs on mobile p
 
 ## The two types of scrollbars
 
-In a web browser, the scrollbars can be either classic or overlay. On mobile platforms, scrollbars are exclusively overlay. On desktop platforms, the user can choose the scrollbar type in the operating system’s settings. The classic scrollbar option is usually labelled “Always show scrollbars”. By default, scrollbars are classic on Windows and overlay on macOS (since 2011).
+In a web browser, the scrollbars can be either classic or overlay. On mobile platforms, scrollbars are exclusively overlay. On desktop platforms, the user can choose the scrollbar type in the operating system’s settings. The classic scrollbar option is usually labelled “Always show scrollbars”. On Windows, scrollbars are classic by default. On macOS, scrollbars are overlay by default (since 2011), but they automatically switch to classic if the user connects a mouse.
 
 The main difference between these two types of scrollbars is that **classic scrollbars** are placed in a separate ”scrollbar gutter” that consumes space when present, which reduces the size of the layout viewport, while **overlay scrollbars**, as their name suggests, are laid over the web page without affecting the size of the layout viewport.
 
