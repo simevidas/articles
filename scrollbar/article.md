@@ -127,8 +127,6 @@ Some websites, such as Google Search, use this method to [position the page foot
 
 <small>\*The layout viewport is not fully visible when the user zooms in on a part of the page, and when the browser’s virtual keyboard is shown.</small>
 
-**Note:** I found one instance where the ICB grows to the “large viewport size”. In iOS Safari, if the user chooses the [“Hide Toolbar” option](https://mastodon.social/@simevidas/111019750217669633) from the page settings menu, the browser’s UI will retract, and the ICB will grow from the “small viewport size” to the “large viewport size”.
-
 ## The new viewport units
 
 The CSS viewport units are specified in the [CSS Values and Units Module](https://drafts.csswg.org/css-values/), which is currently at Level 4. The original six viewport units shipped in browsers a decade ago. The new units shipped in major browsers [over the past year](https://caniuse.com/viewport-unit-variants), starting with Safari 15.4 in May 2022, and ending with Samsung Internet 21 in May 2023.
@@ -199,6 +197,12 @@ This behavior isn’t exclusive to desktop platforms. It also occurs on mobile p
     <img src="media/equal-units.png" alt="">
     <figcaption>A <a href="https://webplatform.news/viewport-units-test.html">test page for viewport units</a> in different contexts where the small and large viewport sizes are equivalent. From left to right: iframe, standalone mode, 3D touch preview on iOS.</figcaption>
 </figure>
+
+It is possible for the small and large viewport sizes to be equivalent even during regular web browsing in mobile browsers. I have found two such cases:
+
+- In Safari on iOS, if the user chooses the [“Hide Toolbar” option](https://mastodon.social/@simevidas/111019750217669633) from the page settings menu, the browser’s UI will retract and stay retracted while the user scrolls the page and navigates to other web pages.
+
+- In Firefox on Android, if the user disables the “Scroll to hide toolbar” option in Settings > Customize, the browser’s UI will completely stop retracting when the user scrolls web pages.
 
 ## The two types of scrollbars
 
