@@ -197,7 +197,7 @@ This behavior isn’t exclusive to desktop platforms. It also occurs on mobile p
 
 <figure>
     <img src="media/equal-units.png" alt="">
-    <figcaption>A <a href="https://output.jsbin.com/jexifog/quiet">test page for viewport units</a> in different contexts where the small and large viewport sizes are equivalent. From left to right: iframe, standalone mode, 3D touch preview on iOS.</figcaption>
+    <figcaption>A <a href="https://webplatform.news/viewport-units-test.html">test page for viewport units</a> in different contexts where the small and large viewport sizes are equivalent. From left to right: iframe, standalone mode, 3D touch preview on iOS.</figcaption>
 </figure>
 
 ## The two types of scrollbars
